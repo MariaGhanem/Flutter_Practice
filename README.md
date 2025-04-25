@@ -23,7 +23,7 @@ This application calculates the sum of the dice. When you press on one of the di
 This is a fun Flutter app that works like the classic Magic 8-Ball toy. Just ask a yes or no question, tap the ball, and it will show you a random answer.
 
 <p float="left">
-  <img src="https://github.com/MariaGhanem/project_images/ballAskAgain.png?raw=true" width="200" />
+  <img src="https://github.com/MariaGhanem/Flutter_Practice/blob/614b47b36806cba69e9b6b2bede6e776a6085507/project_images/ballYes.png?raw=true" width="200" />
   &nbsp;&nbsp;
-  <img src="https://github.com/MariaGhanem/Flutter_Practice/project_images/ballYes.png?raw=true" width="200" />
+  <img src="https://github.com/MariaGhanem/Flutter_Practice/blob/614b47b36806cba69e9b6b2bede6e776a6085507/project_images/ballAskAgain.png?raw=true" width="200" />
 </p>
