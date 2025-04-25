@@ -15,6 +15,21 @@ class _MyAppState extends State<MyApp> {
   int leftnum=1;
   int rightnum=1;
   @override
+  Expanded dice(int diceenumber){
+    return Expanded(
+      child: TextButton(
+        onPressed: (){
+          setState(() {
+            leftnum=Random().nextInt(6)+1;
+            rightnum= Random().nextInt(6) + 1;
+          });
+        },
+        child: Image(
+          image: AssetImage("images/dice${diceenumber}.png"),
+        ),
+      ),
+    );
+  }
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -44,31 +59,8 @@ class _MyAppState extends State<MyApp> {
             ),
             Row(
               children: [
-                Expanded(
-                  child: TextButton(
-                    onPressed: (){
-                      setState(() {
-                        leftnum=Random().nextInt(6)+1;
-                      });
-
-                    },
-                    child: Image(
-                      image: AssetImage("images/dice${leftnum}.png"),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: TextButton(
-                    onPressed: (){
-                      setState(() {
-                        rightnum= Random().nextInt(6) + 1;
-                      });
-                    },
-                    child: Image(
-                      image: AssetImage("images/dice${rightnum}.png"),
-                    ),
-                  ),
-                ),
+                dice(leftnum),
+                dice(rightnum),
               ],
             ),
           ],
